@@ -1,0 +1,291 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('background.jpg'); /* Path to your background image */
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+}
+
+/* Navigation Bar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #00272D;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.website-name {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    font-family: 'Georgia', serif;
+}
+
+/* Navigation Links */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-links a:hover {
+    background-color: #00B3A4;
+    border-radius: 4px;
+}
+
+/* Search Bar */
+.search-bar {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 30px;
+    padding: 5px;
+    border: 2px solid #00B3A4;
+}
+
+.search-bar input[type="search"] {
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 30px;
+    width: 200px;
+    font-size: 16px;
+}
+
+.search-bar button {
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 30px;
+    background-color: #333;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.search-bar button:hover {
+    background-color: #555;
+}
+
+/* Social Media Sidebar */
+.social-media {
+    position: fixed;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.social-icon {
+    width: 30px;
+    height: 30px;
+    filter: invert(100%); /* White icons */
+    opacity: 0.8;
+    transition: opacity 0.3s;
+}
+
+.social-icon:hover {
+    opacity: 1;
+}
+
+/* Main Content */
+.main-content {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.main-content h1 {
+    font-size: 72px;
+    line-height: 1.2;
+    font-weight: bold;
+    margin: 0;
+}
+
+.main-content p {
+    font-size: 18px;
+    margin: 20px 0;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.book-now-btn {
+    padding: 15px 30px;
+    background-color: #00B3A4;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.book-now-btn:hover {
+    background-color: #009688;
+}
+
+
+
+* About Us Section */
+.about-header {
+    text-align: center;
+    padding: 50px 20px;
+    margin-top: 50px;
+}
+
+.about-header h1 {
+    font-size: 64px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.about-header p {
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Team Section */
+.team-section {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.team-section h2 {
+    font-size: 48px;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.team-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.team-member {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+    text-align: center;
+}
+
+.team-member h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.team-member p {
+    font-size: 16px;
+    line-height: 1.4;
+    margin-bottom: 20px;
+}
+
+.role {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #00B3A4;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+
+
+/* Contact Us Form Styles */
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form input, .contact-form textarea {
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.contact-form button {
+    padding: 10px;
+    background-color: #00B3A4;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#recommendation-results {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.recommendation-card {
+    width: 300px;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.recommendation-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.recommendation-card h3 {
+    margin: 10px 0;
+    font-size: 1.5em;
+}
+
+.recommendation-card p {
+    font-size: 1em;
+    color: white;
+}

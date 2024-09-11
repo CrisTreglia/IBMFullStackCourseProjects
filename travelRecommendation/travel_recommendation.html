@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Bloom</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <!-- Website Logo and Name -->
+            <div class="logo">
+                <img src="logo.png" alt="Logo" class="logo-img">
+                <a href="index.html" class="website-name">Travel Bloom</a>
+            </div>
+
+            <!-- Navigation Links -->
+            <ul class="nav-links">
+                <li><a href="travel_recommendation.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+
+            <!-- Search Bar -->
+            <form class="search-bar">
+                <input type="search" id="searchInput" name="search" placeholder="Enter a destination or keyword">
+                <button type="submit" id="searchBtn">Search</button>
+                <button type="reset" id="resetBtn">Clear</button>
+            </form>
+        </nav>
+    </header>
+
+    <!-- Sidebar for social media icons -->
+    <aside class="social-media">
+        <a href="#"><img src="facebook.png" alt="Facebook" class="social-icon"></a>
+        <a href="#"><img src="twitter.png" alt="Twitter" class="social-icon"></a>
+        <a href="#"><img src="instagram.png" alt="Instagram" class="social-icon"></a>
+        <a href="#"><img src="youtube.png" alt="YouTube" class="social-icon"></a>
+    </aside>
+
+    <main>
+        <div class="main-content">
+            <h1>EXPLORE <br>DREAM <br>DESTINATION</h1>
+            <p>It encourages exploration of unfamiliar territories, embracing diverse cultures and landscapes, while pursuing the desired destination that captivates the heart and ignites a sense of wonder.</p>
+            <button class="book-now-btn">BOOK NOW</button>
+        </div>
+        <section id="recommendation-results"></section>
+    </main>
+    <script src="/travelRecommendation/script.js"></script> <!-- Link to the JavaScript file -->
+</body>
+</html>
